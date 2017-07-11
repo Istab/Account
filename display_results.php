@@ -13,6 +13,9 @@
 
     // for the heard_from radio buttons,
     // display a value of 'Unknown' if the user doesn't select a radio button
+    if ($heard_from == NULL) {
+      $heard_from='Unknown';
+    }
 
     // for the wants_updates check box,
     // display a value of 'Yes' or 'No'
@@ -37,7 +40,7 @@
         <span><?php echo htmlspecialchars($phone); ?></span><br>
 
         <label>Heard From:</label>
-        <span><?php echo htmlspecialchars($heard_from); ?></span><br>
+        <span><?php echo $heard_from; ?></span><br>
 
         <label>Send Updates:</label>
         <span><?php echo htmlspecialchars($wants_updates); ?></span><br>
