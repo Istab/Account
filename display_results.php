@@ -47,7 +47,7 @@
         <span><?php echo $wants_updates; ?></span><br>
 
         <label>Contact Via:</label>
-        <span><?php echo htmlspecialchars($contact_via); ?></span><br>
+        <span><?php echo $contact_via; ?></span><br>
 
         <span>Comments:</span><br>
         <span><?php echo htmlspecialchars($comments); ?></span><br>
