@@ -19,6 +19,7 @@
 
     // for the wants_updates check box,
     // display a value of 'Yes' or 'No'
+    $wants_updates = ($wants_updates ? 'Yes' : 'No');
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +44,7 @@
         <span><?php echo $heard_from; ?></span><br>
 
         <label>Send Updates:</label>
-        <span><?php echo htmlspecialchars($wants_updates); ?></span><br>
+        <span><?php echo $wants_updates; ?></span><br>
 
         <label>Contact Via:</label>
         <span><?php echo htmlspecialchars($contact_via); ?></span><br>
