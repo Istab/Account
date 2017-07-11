@@ -50,7 +50,7 @@
         <span><?php echo $contact_via; ?></span><br>
 
         <span>Comments:</span><br>
-        <span><?php echo htmlspecialchars($comments); ?></span><br>
+        <span><?php echo nl2br(htmlspecialchars($comments)); ?></span><br>
     </main>
 </body>
 </html>
